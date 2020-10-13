@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #d0efff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #03254c;
+  outline: 1px solid #03254c;
+}
+
+body {
+  font-family: Cambria, 'Times New Roman', serif;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #03254c;
+  padding: 30px 20px;
+}
+
+header nav {
+  overflow: hidden;
+}
+
+header nav .logo {
+  float: left;
+}
+
+header nav .logo span {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+header nav .logo .first {
+  color: #d0efff;
+}
+
+header nav .logo .second {
+  color: #187bcd;
+}
+
+header nav .menu {
+  float: right;
+  font-size: 1.3rem;
+}
+
+header nav .menu ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+header nav .menu li {
+  float: left;
+  padding: 10px;
+}
+
+header nav .menu li a {
+  color: #d0efff;
+}
+
+section .background-overlay {
+  height: 90vh;
+  background-image: url("../bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+section .background-overlay .background {
+  color: #d0efff;
+  width: inherit;
+  height: inherit;
+  font-size: 30px;
+  background-color: rgba(24, 123, 205, 0.5);
+  text-align: justify;
+}
+
+section .background-overlay .background h1 {
+  text-transform: uppercase;
+  color: #d0efff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-weight: bolder;
+  z-index: 1;
+  text-align: center;
+}
+
+section .background-overlay .background h1 .slide-up-div {
+  display: inline-block;
+  height: 33px;
+  overflow: hidden;
+  color: #03254c;
+}
+
+section .background-overlay .background h1 .slide-up-div .slide-up-text {
+  display: inline-block;
+  -webkit-animation: rotate 10s infinite;
+          animation: rotate 10s infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+  }
+  40% {
+    -webkit-transform: translateY(-118px);
+            transform: translateY(-118px);
+  }
+  60% {
+    -webkit-transform: translateY(-170px);
+            transform: translateY(-170px);
+  }
+  80% {
+    -webkit-transform: translateY(-225px);
+            transform: translateY(-225px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+  }
+  40% {
+    -webkit-transform: translateY(-118px);
+            transform: translateY(-118px);
+  }
+  60% {
+    -webkit-transform: translateY(-170px);
+            transform: translateY(-170px);
+  }
+  80% {
+    -webkit-transform: translateY(-225px);
+            transform: translateY(-225px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+footer {
+  color: #03254c;
+  background-color: #d0efff;
+}
+
+footer p {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p a {
+  color: #187bcd;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
+}
+
+footer p a:hover {
+  color: #03254c;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    overflow: hidden;
+  }
+  header nav .logo {
+    display: block;
+    text-align: center;
+    float: none;
+    margin-bottom: 20px;
+  }
+  header nav .menu {
+    display: block;
+    text-align: center;
+    float: none;
+  }
+  header nav .menu ul {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
